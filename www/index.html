@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">   
+    <!-- width - viewport的宽度 height - viewport的高度   
+    initial-scale - 初始的缩放比例  
+    minimum-scale - 允许用户缩放到的最小比例   
+    maximum-scale - 允许用户缩放到的最大比例  
+    user-scalable - 用户是否可以手动缩放   -->
+    <title>百度首页</title>
+    <!-- 设置网站的icon -->
+    <link rel="shortcut icon" href="/icons/icon_3c99074.jpg" type="image/x-icon" />
+    <!-- 打包前 -->
+    <link rel="stylesheet" type="text/css" href="/css/baidu_459e14a.css">
+    <!-- 打包后 -->
+    <link rel="stylesheet" type="text/css" href="./pkg/aio.css">
+    <!--  
+    <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv-printshiv.js"></script>-->
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- 设置导航部分 -->
+        <header>
+            <nav>
+                <a href="">糯米</a>
+                <a href="">新闻</a>
+                <a href="">hao123</a>
+                <a href="">地图</a>
+                <a href="">视频</a>
+                <a href="">贴吧</a>
+                <!-- 设置列表 -->
+                <a href="">登录</a>
+                <div class="setting-menu">
+                    <a class="baidu-nav" href="javascript:;">设置</a>
+                    <div class="baidu-setting">
+                        <i class="setting-icon"></i>
+                        <a href="javascript:;">搜索设置</a>
+                        <a href="javascript:;">高级搜索</a>
+                        <a href="javascript:;">关闭预测</a>
+                        <a href="javascript:;">搜索历史</a>
+                    </div>
+                </div>
+                <a href="javascript:;" class="more" id="moreProduct">更多产品</a>
+            </nav>
+        </header>
+        <!-- 移动显示导航内容 -->
+        <div class="mNav">
+            <a href=""><img src="/icons/m1_2abd5c6.png" alt="个人中心"></a>
+            <a href=""><img src="/icons/m2_5ea6044.png" alt="马甲"> </a>
+        </div>
+        <!-- 更多产品侧边栏  START -->
+        <div class="more-product" id="moreList">
+            <ul>
+                <li class="p1"><a href="javascript:;">更多产品</a></li>
+                <li><a href="javascript:;"><span class="more-li-one"></span>音乐</a></li>
+                <li><a href="javascript:;"><span class="more-li-two"></span>图片</a></li>
+                <li><a href="javascript:;"><span class="more-li-three"></span>知道</a></li>
+                <li><a href="javascript:;"><span class="more-li-four"></span>文库</a></li>
+                <li><a href="javascript:;"><span class="more-li-five"></span>风云榜</a></li>
+                <li><a href="javascript:;"><span class="more-li-six"></span>百度推广</a></li>
+                <li class="p2"><a href="javascript:;">更多产品>></a></li>
+            </ul>
+        </div>
+        <!-- 更多产品侧边栏  END -->
+        <!-- 设置主题部分 -->
+        <!-- 百度代码 -->
+        <div id="mm">
+            <form data-formposition="i" class="se-form" id="index-form" action="/s" method="get" autocomplete="off">
+                <div id="logo" class="noTapColor">
+                    <img src="/icons/plus_logo_5bc5f12.png" width="175" height="55" alt="百度一下">
+                </div>
+                <div class="con-wrap">
+                    <input type="text" autocomplete="off" autocorrect="off" maxlength="64" id="index-kw" name="word" class="se-input" data-sug="1">
+                    <div class="se-inner">
+                        <div id="index-cross" class="cross" style="display: none;">
+                        </div>
+                        <button id="index-bn" class="se-bn" type="submit">百度一下</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <!-- 自己写 -->
+        <div class="content">
+            <div class="search-form">
+                <img src="/icons/bd_logo1_b15c113.png" alt="百度图片">
+                <form action="http://wwww.baidu.com/s" method="get" target="_blank">
+                    <input type="text" name="wd" class="search-input">
+                    <button type="submit" class="search-btn" autofocus="autofocus">百度一下</button>
+                    <!-- <span class="icon-mic"></span> -->
+                    <!-- <span class="icon-cmo"></span> -->
+                </form>
+            </div>
+        </div>
+        <!-- 中间导航部分 -->
+        <!-- baidu 结构 -->
+        <div id="navs">
+            <a href=""><img src="/icons/51_6f88877.png" alt=""><i class="navs-news"></i>新闻</a>
+            <a href=""><img src="/icons/52_4355f20.png" alt=""><i class="navs-novel"></i>小说</a>
+            <a href=""><img src="/icons/53_6c7b7f4.png" alt=""><i class="navs-video"></i>视频</a>
+            <a href=""><img src="/icons/54_4f55d15.png" alt=""><i class="navs-life"></i>糯米</a>
+            <a href=""><img src="/icons/55_97dd648.png" alt=""><i class="navs-map"></i>地图</a>
+            <a href=""><img src="/icons/56_d712103.png" alt=""><i class="navs-map"></i>更多</a>
+        </div>
+        <!-- 中间内容部分 -->
+        <div class="mid-article">
+            <div class="mid-wrap">
+                <h2>我的导航</h2>
+                <a href="">资讯</a>
+                <a href="">hao123</a>
+                <a href="">图片</a>
+                <a href="">爱奇艺</a>
+                <a href="">美女</a>
+                <a href="">音乐</a>
+                <a href="">笑话</a>
+                <a href="">+</a>
+            </div>
+        </div>
+        <!-- 设置尾部 -->
+        <footer>
+            <p>
+                <a href="">把百度设为首页</a>
+                <a href="">关于百度</a>
+                <a href="">About Baidu</a>
+            </p>
+            <p>
+                <span>©2016 Baidu</span>
+                <a href="">使用百度前必读</a>
+                <a href="">意见反馈</a>
+                <span>京ICP证030173号</span>
+                <span class="c-icon1"></span>
+            </p>
+            <p>
+                <span class="c-icon2"></span>
+                <span>京公网安备11000002000001号</span>
+            </p>
+        </footer>
+    </div>
+    <!--   <script src="./js/lib/jquery-1.9.1.min.js"></script>
+    <script src="./js/main.js"></script>-->
+    <!-- 打包前 -->
+    <script src="./js/main.js"></script>
+    <!-- 打包后 -->
+    <script src="./pkg/lib.js"></script>
+
+</body>
+
+</html>

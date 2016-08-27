@@ -1,0 +1,770 @@
+.wrapper {
+    position: relative;
+    min-height: 650px;
+    min-width: 850px;
+    height: 100%;
+}
+
+
+/*整体body样式*/
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 12px arial;
+    height: 100%
+}
+
+
+/*头部清除浮动（在使用浮动前）*/
+
+header {
+    overflow: hidden;
+}
+
+
+/*头部导航样式*/
+
+header nav {
+    width: 345px;
+    /*margin-right: 10px;*/
+    float: right;
+    margin: 19px 0 5px 0;
+    padding: 0 140px 0 0;
+}
+
+
+/*头部  导航  a标签样式*/
+
+header nav a {
+    margin-left: 20px;
+    color: #333;
+    float: left;
+    font-weight: bold;
+    line-height: 24px;
+    font-size: 13px;
+    margin-left: 20px;
+    text-decoration: underline;
+}
+
+
+/*头部  导航  a标签 hover 样式*/
+
+header nav a:hover {
+    color: #00c;
+}
+
+
+/*设置 下拉菜单*/
+
+.setting-menu {
+    position: absolute;
+    /*width: 46px;*/
+    height: 24px;
+    right: 95px;
+}
+
+.setting-menu a {
+    text-decoration: none;
+}
+
+
+/*显示*/
+
+.setting-menu:hover .baidu-setting {
+    display: block;
+}
+
+.setting-menu .baidu-setting {
+    position: absolute;
+    top: 25px;
+    left: 3px;
+    width: 60px;
+    border: 1px solid #DDD;
+    box-shadow: 1px 1px 5px #DDD;
+    /*隐藏*/
+    display: none;
+    z-index: 99;
+}
+
+.setting-menu .baidu-nav {
+    text-decoration: underline;
+}
+
+.setting-menu .baidu-setting a {
+    position: relative;
+    left: -20px;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    font-size: 12px;
+}
+
+.setting-menu .baidu-setting a:hover {
+    background-color: #38F;
+    color: white;
+}
+
+
+/*设置三角效果*/
+
+.setting-menu .setting-icon {
+    position: absolute;
+    top: -11px;
+    left: 25px;
+    width: 0;
+    height: 0;
+    display: block;
+    border: 5px solid transparent;
+    border-style: dashed dashed solid dashed;
+    border-bottom-color: #D8D8D8;
+}
+
+.setting-menu .setting-icon:after {
+    /**/
+    content: '.';
+    position: absolute;
+    top: -4px;
+    left: -5px;
+    width: 0;
+    height: 0;
+    display: block;
+    border: 5px solid transparent;
+    border-style: dashed dashed solid dashed;
+    border-bottom-color: #FFFFFF;
+}
+
+
+/*更多产品侧边栏*/
+
+.more-product {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    min-height: 600px;
+    width: 75px;
+    border-left: 1px solid #DDD;
+    background-color: #F9F9F9;
+    display: none;
+    z-index: 999;
+}
+
+nav .more:hover .more-product:hover .stop:hover {
+    display: block;
+}
+
+.more-product ul {
+    padding: 2px 0px 0 0px;
+    text-align: center;
+    font-size: 14px;
+    list-style: none;
+}
+
+.more-product li {
+    position: relative;
+    height: 60px;
+    padding-top: 8px;
+    padding-left: 0px;
+    padding-right: 0px;
+    border-bottom: 1px solid #D8D8D8;
+}
+
+.more-product a {
+    color: black;
+    text-decoration: none;
+    margin-bottom: 0px;
+}
+
+.more-product a:hover {
+    text-decoration: underline;
+}
+
+
+/*更多产品  图片列表*/
+
+.more-product span {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    width: 30px;
+    height: 30px;
+}
+
+.more-product .more-sub-btn {
+    position: relative;
+    height: 28px;
+}
+
+.more-product .more-li-one {
+    background: url("/icons/11.png");
+    background-size: 30px 30px;
+}
+
+.more-product .more-li-two {
+    background: url("/icons/12.png");
+    background-size: 30px 30px;
+}
+
+.more-product .more-li-three {
+    background: url("/icons/13.png");
+    background-size: 30px 30px;
+}
+
+.more-product .more-li-four {
+    background: url("/icons/14.png");
+    background-size: 30px 30px;
+}
+
+.more-product .more-li-five {
+    background: url("/icons/15.png");
+    background-size: 30px 30px;
+}
+
+.more-product .more-li-six {
+    display: block;
+    margin: 0 auto;
+    width: 30px;
+    height: 30px;
+    background: url("/icons/16.png");
+    background-size: 30px 30px;
+}
+
+
+/*侧边栏   更多产品 高度*/
+
+.more-product li.p1 {
+    height: 28px;
+}
+
+.more-product li.p2 {
+    border: 0;
+}
+
+
+/*导航  更多产品 样式*/
+
+header nav .more {
+    display: inline-block;
+    position: absolute;
+    /*right: 10px;*/
+    width: 60px;
+    height: 23px;
+    float: left;
+    color: white;
+    background: #38f;
+    line-height: 24px;
+    font-size: 13px;
+    text-align: center;
+    overflow: hidden;
+    border-bottom: 1px solid #38f;
+    margin-left: 66px;
+    margin-right: 2px;
+    text-decoration: none;
+}
+
+
+/*导航  更多产品 hover 样式*/
+
+header nav .more：hover {
+    color: #fff;
+}
+
+
+/*头部  导航  a标签 visited 样式*/
+
+
+/*主体居中对齐*/
+
+.content {
+    position: relative;
+    top: 38.2%;
+    height: 191px;
+    text-align: center;
+}
+
+.content form {
+    position: relative;
+    width: 650px;
+    height: 191px;
+    margin: 0 auto;
+}
+
+
+/*麦克风图标*/
+
+.content .icon-mic {
+    position: absolute;
+    display: inline-block;
+    width: 20px;
+    height: 18px;
+    top: 8px;
+    right: 125px;
+    background: url("/icons/6.png")no-repeat;
+    background-size: 14px 17px;
+    border: 1px solid white;
+    border-right-color: #DDD;
+    cursor: pointer;
+}
+
+.content .icon-mic:hover {
+    position: absolute;
+    display: inline-block;
+    width: 20px;
+    height: 18px;
+    top: 8px;
+    right: 125px;
+    background: url("/icons/5.png")no-repeat;
+    background-size: 14px 17px;
+    border: 1px solid white;
+    border-right-color: #DDD;
+    cursor: pointer;
+}
+
+
+/*摄像机图标*/
+
+.content .icon-cmo {
+    position: absolute;
+    display: inline-block;
+    width: 20px;
+    height: 18px;
+    top: 8px;
+    right: 100px;
+    background: url("/icons/8.png")no-repeat;
+    background-size: 14px 17px;
+    cursor: pointer;
+}
+
+.content .icon-cmo:hover {
+    position: absolute;
+    display: inline-block;
+    width: 20px;
+    height: 18px;
+    top: 8px;
+    right: 100px;
+    background: url("/icons/7.png")no-repeat;
+    background-size: 14px 17px;
+    cursor: pointer;
+}
+
+.content .search-form {
+    position: relative;
+    /*height: 191px;*/
+    top: -191px;
+}
+
+
+/*为图片设置样式*/
+
+.content img {
+    width: 270px;
+    height: 129px;
+}
+
+
+/*主体部分———输入框的样式*/
+
+input {
+    outline: none;
+}
+
+.content .search-input {
+    float: left;
+    width: 538px;
+    height: 28px;
+    border: 1px solid #ddd;
+    /*边框内容的四周距离*/
+    padding: 3px 0 3px 7px;
+    border-right-width: 0px;
+    vertical-align: middle;
+}
+
+.content .search-input:hover {
+    border-color: #999 transparent #b3b3b3 #999;
+}
+
+.content .search-input:focus {
+    border-color: #4791FF transparent #4791FF #4791FF;
+}
+
+
+/*主体部分————提交按钮样式*/
+
+.content .search-btn {
+    float: left;
+    /*margin: -5px;*/
+    width: 100px;
+    height: 36px;
+    color: white;
+    font-size: 15px;
+    letter-spacing: 1px;
+    background: #3385ff;
+    border: 1px solid #2d78f4;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.content .search-btn:hover {
+    background-color: #317EF3;
+    border-bottom: 1px solid #2868C8;
+    box-shadow: 1px 1px 1px #CCC;
+}
+
+
+/*button 样式*/
+
+
+/*底部样式************/
+
+footer {
+    height: 100px;
+    position: absolute;
+    bottom: 40px;
+    text-align: left;
+    width: 100%;
+    margin: 0 auto;
+    z-index: 0;
+    font-size: 12px;
+    color: #999;
+    overflow: hidden;
+}
+
+footer p {
+    text-align: center;
+}
+
+footer p a {
+    color: #999;
+}
+
+footer p a:hover {
+    color: #999;
+}
+
+
+/*小图标*/
+
+.c-icon1 {
+    position: relative;
+    top: 5px;
+    width: 14px;
+    height: 17px;
+    display: inline-block;
+    overflow: hidden;
+    background: url("/icons/1.png")no-repeat;
+    background-size: 14px 15px;
+}
+
+.c-icon2 {
+    position: relative;
+    top: 5px;
+    width: 14px;
+    height: 17px;
+    display: inline-block;
+    overflow: hidden;
+    background: url("/icons/2.png")no-repeat;
+    background-size: 14px 15px;
+}
+
+.content .search-form > img {
+    width: 270px;
+    height: 129px;
+    margin-bottom: 30px;
+}
+
+@media only screen and (min-width: 601px) {
+    header {
+        display: block;
+    }
+    .mNav {
+        display: none;
+    }
+    #mid-nav {
+        display: none;
+    }
+    .mid-article {
+        display: none;
+    }
+    .content > form {
+        display: none;
+    }
+    #mm {
+        display: none;
+    }
+    #navs {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .wrapper {
+        position: relative;
+        min-height: 568px;
+        min-width: 320px;
+        height: 100%;
+    }
+    header {
+        display: none;
+    }
+    body {
+        background-color: #EEEFF0;
+    }
+    .mNav > a:nth-child(1) {
+        position: absolute;
+        top: 5px;
+        right: 40px;
+        padding: 3px;
+        color: #9b9b9b;
+        font-size: 28px;
+        line-height: 20px;
+    }
+    .mNav > a:nth-child(2) {
+        position: absolute;
+        top: 5px;
+        right: 10px;
+        padding: 3px;
+        color: #9b9b9b;
+        font-size: 28px;
+        line-height: 20px;
+    }
+    .mNav > a >img {
+        width: 25px;
+        height: 25px;
+    }
+    .content .search-form {
+        width: 89%;
+        margin: 10px auto;
+    }
+    .content .search-form > img {
+        width: 175px;
+        height: 55px;
+        margin-top: 20px;
+        margin-bottom: 15px;
+        background-image: url(./icons/plus_logo.png)no-repeat;
+    }
+    .content form {
+        margin: -200px 10px;
+        height: 42px;
+        background: #fff;
+        border-bottom-color: #bcbcbc;
+    }
+    .content .search-input {
+        border-radius: 0;
+        margin: 0;
+        padding: -1px 42px 7px 6px;
+        height: 42px;
+        line-height: 28px;
+        resize: none;
+        overflow: hidden;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .content .icon-mic {
+        position: absolute;
+        display: inline-block;
+        width: 35px;
+        height: 30px;
+        top: 8px;
+        right: 105px;
+        background: url("/icons/6.png")no-repeat;
+        background-size: 28px 34px;
+        border: none;
+        /*border: 1px solid white;*/
+        cursor: pointer;
+    }
+    .content .icon-mic:hover {
+        position: absolute;
+        display: inline-block;
+        width: 35px;
+        height: 30px;
+        top: 8px;
+        right: 105px;
+        background: url("/icons/5.png")no-repeat;
+        background-size: 28px 34px;
+        /*border: 1px solid white;*/
+        cursor: pointer;
+    }
+    .content .icon-cmo {
+        display: none;
+    }
+    #mid-nav {
+        margin: 37px 0 14px;
+        overflow: hidden;
+    }
+    #mid-nav a:first-child,
+    #navs a:nth-child(7) {
+        margin-left: 4%;
+    }
+    /*中间导航*/
+    #navs {
+        margin: 17px 0 14px;
+        overflow: hidden;
+    }
+    #navs a {
+        float: left;
+        width: 16%;
+        font-size: 12px;
+        color: #666;
+        margin-top: 10px;
+        text-align: center;
+        text-decoration: none;
+    }
+    #navs a > img {
+        margin-top: 5px;
+        margin-bottom: -30px;
+        padding: 0;
+        background-image: url(./icons/51.png) 22px 22px center center no-repeat;
+        width: 22px;
+        height: 20px;
+    }
+    #navs a:first-child,
+    #navs a:nth-child(7) {
+        margin-left: 2%;
+    }
+    #navs a i {
+        display: block;
+        margin-top: 4px;
+        margin-bottom: 4px;
+        height: 24px;
+    }
+    /*baidu mm-css   START*/
+    #mm {
+        position: absolute;
+        top: 180px;
+        width: 100%;
+        padding-bottom: 10px;
+    }
+    #logo {
+        position: relative;
+        left: 50%;
+        margin-left: -85px;
+        top: -75px;
+        height: 55px;
+        /*padding: 17px 0 15px;*/
+    }
+    .noTapColor {
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    }
+    img[Attributes Style] {
+        width: 175px;
+        height: 55px;
+    }
+    #index-form {
+        margin: 0 10px;
+        height: 42px;
+        background: #fff;
+        border: 1px solid #949494;
+        border-bottom-color: #bcbcbc;
+    }
+    #index-form .con-wrap {
+        display: -moz-box;
+        display: -webkit-box;
+        display: box;
+        width: 100%;
+    }
+    #index-card .se-input {
+        -webkit-border-radius: 0;
+        border-radius: 0;
+        margin: 0;
+        padding: 7px 42px 7px 6px;
+        height: 42px;
+        line-height: 28px;
+        resize: none;
+        overflow: hidden;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    #index-card .se-inner {
+        width: 82px;
+        position: relative;
+    }
+    #index-cross {
+        position: absolute;
+        top: 0;
+        /* left: -35px; */
+        width: 35px;
+        height: 42px;
+        display: none;
+        background: url(//m.baidu.com/static/search/clear.png) no-repeat center;
+        -webkit-background-size: 16px;
+        background-size: 16px;
+        z-index: 2;
+    }
+    #index-bn {
+        position: absolute;
+        top: 0px;
+        right: 11px;
+        width: 82px;
+        height: 37px;
+        background: #38f;
+        color: #fff;
+        white-space: nowrap;
+        line-height: 42px;
+        letter-spacing: -1px;
+        font-size: 16px;
+        border-top: 1px solid #38f;
+        border-bottom: 1px solid #38f;
+        box-sizing: inherit;
+    }
+    button {
+        outline: none;
+    }
+    input,
+    button,
+    textarea {
+        border: 0;
+        border-radius: 0;
+        background: transparent;
+        -webkit-appearance: none;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    /*baidu  mm-css  END*/
+    /*中部导航*/
+    .mid-article {
+        width: 90%;
+        height: 120px;
+        margin: 25px auto;
+        background-color: #FFF;
+        /*border: 1px solid red;*/
+    }
+    .mid-article .mid-wrap {
+        margin: -10px 10px;
+    }
+    .mid-article .mid-wrap h2 {
+        line-height: 40px;
+        font-size: 15px;
+        font-weight: normal;
+        color: #999;
+    }
+    .mid-article .mid-wrap a {
+        top: -20px;
+        left: 10px;
+        float: left;
+        display: block;
+        position: relative;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        padding: 0 6px;
+        width: 25%;
+        height: 42px;
+        line-height: 42px;
+        text-decoration: none;
+        color: #000;
+        font-size: 15px;
+    }
+    .content .search-form img{
+        display: block;
+        background: url(./icons/plus_logo.png) 175px 55px  center center no-repeat;
+    }
+
+    footer p:first-child {
+        display: none;
+    }
+    footer p .c-icon1 {
+        display: none;
+    }
+    .content .search-form {
+        display: none;
+    }
+}
